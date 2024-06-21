@@ -1,0 +1,39 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+            placeholder="Your name.." required autocomplete="off">
+
+        <div *ngIf="!name.valid && name.touched && !name.disabled">
+            <span>Your name is required</span>
+        </div>
+
+        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+            placeholder="Your email address.." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            autocomplete="off">
+
+        <div *ngIf="!email.valid && email.touched && !email.disabled">
+            <span>Your email is required</span>
+        </div>
+
+        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
+            placeholder="Write something.." style="height:200px" required></textarea>
+
+        <div *ngIf="!message.valid && message.touched && !message.disabled">
+            <span>Your message is empty</span>
+        </div>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required [(ngModel)]="contactData.terms"> 
+            <label for="terms" class="checkbox-label">I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</label>
+            <div *ngIf="contactForm.controls['terms'] && !contactForm.controls['terms'].valid && contactForm.controls['terms'].touched">
+                <span>You must agree to the terms and conditions</span>
+            </div>
+        </div>
+
+        <div class="button-form">
+            <input type="submit" value="Send message" [disabled]="!contactForm.valid">
+        </div>
+
+    </form>
+</div>

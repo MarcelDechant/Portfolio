@@ -1,0 +1,86 @@
+.my-skills-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.my-skill-section {
+    display: flex;
+    z-index: 4;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 1440px;
+}
+
+.leftside {
+    display: flex;
+    gap: 80px;
+    padding-left: 100px;
+}
+
+.linedown {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.rightside {
+    div {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 90px;
+    }
+}
+
+.rightline {
+    height: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1CE6B5;
+    width: 289px;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 200px;
+    height: 58px;
+    color: #FFFFFF;
+    background-color: #00BEE8;
+    font-size: 23px;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    border: 0;
+    transition: transform 0.3s ease;
+    transform-origin: top left;
+
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.2);
+
+    }
+
+}
+
+.shadow {
+    position: relative;
+    top: -540px;
+    right: -966px;
+
+}
