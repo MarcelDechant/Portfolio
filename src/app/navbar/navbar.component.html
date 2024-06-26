@@ -5,9 +5,32 @@
         </div>
 
         <div class="right-side">
-            <a href="#aboutMe">About me</a>
-            <a href="#mySkills">Skills</a>
-            <a href="#Portfolio">Portfolio</a>
+            <a href="#aboutMe" (click)="setActive($event)">{{ "header.aboutMe" | translate }}</a>
+            <a href="#mySkills" (click)="setActive($event)">{{ "header.skills" | translate }}</a>
+            <a href="#Portfolio" (click)="setActive($event)">{{ "header.portfolio" | translate }}</a>
+
+
+            <div class="languageButtonBox">
+                <button
+                  name="deButton"
+                  class="languageButton"
+                   [class.selectedLanguage]="languageDeSelected"
+                    (click)="changeLanguage('de')" 
+                >
+                
+                  DE
+                </button>
+                <span style="color: white">|</span>
+                <button
+                  name="enButton"
+                  class="languageButton"
+                   [class.selectedLanguage]="!languageDeSelected"
+                    (click)="changeLanguage('en')"
+                >
+                
+                  EN
+                </button>
+              </div>
         </div>
     </div>
 </div>

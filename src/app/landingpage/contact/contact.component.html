@@ -2,7 +2,7 @@
     <div class="headline-wrapper">
         <div class="leftline"></div>
         <div class="headline">
-            <h1>Contact</h1>
+            <h1>{{ "contact.headline" | translate }}</h1>
         </div>
         <div class="rightline"></div>
     </div>
@@ -16,11 +16,11 @@
 
         <div class="content-text">
             <div class="content-headline">
-                <h2>Got a problem to solve?</h2>
+                <h2>{{ "contact.questionLine" | translate }}</h2>
             </div>
-            <p>Contact me through this form, I am interested in hearing<br> from you, knowing your ideas and
-                contributing to your<br> projects with my work.</p>
-            <p>Need a Frontend developer?<b>Contactme!</b></p>
+            <p>{{ "contact.textBox" | translate }}</p>
+            
+            <p>{{ "contact.question" | translate }} <span>&nbsp;</span><b>{{ "contact.contactMe" | translate }}</b></p>
             <div class="shadow-box">
                 <img src="assets/img/shadows/Vector 4.png" alt="">
             </div>
@@ -33,7 +33,7 @@
 </div>
 
 
-<div class="svg-container">
+<div class="svg-container" (click)="goUp()">
     <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="circle-with-arrow">
         <rect x="1" y="1" width="37" height="37" rx="18.5" stroke="white" stroke-width="2" />

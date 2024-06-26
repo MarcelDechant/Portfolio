@@ -1,0 +1,49 @@
+{
+    "header": {
+      "aboutMe": "Über mich",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt"
+    },
+    "firstsection":{
+      "iAm": "Ich bin",
+      "buttonTalk": "Lass uns reden!",
+      "scroll": "Runterscrollen"
+    },
+    "aboutMe": {
+      "headline": "Über mich",
+      "introText": "Hallo, ich bin ein Front-End-Entwickler aus Amberg, Deutschland. Ich freue mich, dass Sie meine Seite besucht haben, um sich über meine Fähigkeiten zu informieren und zu sehen, wie ich Ihr Unternehmen mit Ihnen voranbringen kann.",
+      "firstText": "Das Programmieren liegt mir besonders am Herzen, weil es mir ermöglicht, Ideen in die Realität umzusetzen. Die Möglichkeit, etwas aus dem Nichts zu erschaffen, komplexe Probleme zu lösen und ständig neue Technologien zu erlernen, ist unglaublich bereichernd.",
+      "secondText": "Der Grundstein für meinen Weg zum Programmieren war die Beherrschung der Problemlösung. Zu verstehen, wie man komplexe Probleme in überschaubare Teile zerlegt und logisches Denken anwendet, um effektive Lösungen zu entwickeln, hat meine Herangehensweise an das Programmieren verändert."
+    },
+    "mySkills": {
+      "headline": "Skills",
+      "textbox": "Ich habe meine Fähigkeiten im Bereich der Frontend-Entwicklung ausgebaut, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen.",
+      "button": "Kontakt aufnehmen"
+    },
+    "portfolio": {
+      "exploreHtml": "Entdecken Sie hier eine Auswahl meiner Arbeiten - interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
+      "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+      "epl": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsa-Flaschen zu finden, um gegen das Killerhuhn zu kämpfen."
+    },
+    "contact": {
+      "headline": "Kontakt",
+      "questionLine": "Haben Sie ein Problem das gelöst werden muss?",
+      "textBox": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+      "question": "Brauchen Sie einen Frontend developer?",
+      "contactMe": "Kontaktiere mich!",
+      "placeholderName": "Ihr Name",
+      "nameRequired": "Ihr Name ist erforderlich",
+      "placeholderEmail": "Ihre Email",
+      "emailRequired": "Ihre Email ist erforderlich",
+      "placeholderMessage": "Ihre Nachricht",
+      "messageRequired": "Ihre Nachricht ist leer",
+      "privatPolicyFirst": "Ich hab die",
+      "privatPolicySecond": "gelesen und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+      "privatPolicyLink": "Datenschutzbestimmung",
+      "button": "Nachricht abschicken",
+      "acceptPP": "Bitte akzeptieren Sie die Datenschutzrichtlinie",
+      "successMessage": "Vielen dank für Ihre Nachricht"
+    }
+    
+  }

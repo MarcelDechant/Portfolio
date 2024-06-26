@@ -73,6 +73,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            width: 40%;
 
 
             .content-headline {
@@ -86,6 +87,9 @@
                     font-size: 32px;
                 }
             }
+        }
+        app-contact-form{
+            width: 40%;
         }
     }
 }

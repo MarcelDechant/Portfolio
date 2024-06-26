@@ -4,7 +4,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
-import { routes } from './app.routes';
+
 
 @Component({
   selector: 'app-root',
