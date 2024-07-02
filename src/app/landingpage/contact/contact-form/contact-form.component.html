@@ -25,7 +25,7 @@
 
         <div>
             <input type="checkbox" id="terms" name="terms" required [(ngModel)]="contactData.terms"> 
-            <label for="terms" class="checkbox-label">{{ "contact.privatPolicyFirst" | translate }} <a href="">{{ "contact.privatPolicyLink" | translate }}</a> {{ "contact.privatPolicySecond" | translate }}</label>
+            <label for="terms" class="checkbox-label">{{ "contact.privatPolicyFirst" | translate }} <a [routerLink]="['/privacy']">{{ "contact.privatPolicyLink" | translate }}</a> {{ "contact.privatPolicySecond" | translate }}</label>
             <div *ngIf="contactForm.controls['terms'] && !contactForm.controls['terms'].valid && contactForm.controls['terms'].touched">
                 <span>{{ "contact.acceptPP" | translate }}</span>
             </div>

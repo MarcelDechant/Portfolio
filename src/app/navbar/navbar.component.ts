@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component,HostListener, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,10 +10,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements OnInit {
-
+  menuOpen = false;
   public languageDeSelected: boolean = false;
   languages = ['en', 'de'];
-  
+
 
   constructor(private translateService: TranslateService) { }
 
@@ -43,7 +43,22 @@ export class NavbarComponent implements OnInit {
     });
 
     (event.target as HTMLElement).classList.add('active');
-    
+
   }
-  
+
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    if (window.innerWidth > 650) {
+      this.menuOpen = false;
+    }
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('resize', this.onResize);
+  }
 }

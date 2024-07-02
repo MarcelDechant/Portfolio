@@ -3,12 +3,12 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-privacy',
   standalone: true,
-  imports: [TranslateModule, RouterModule],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  imports: [RouterModule,TranslateModule],
+  templateUrl: './privacy.component.html',
+  styleUrl: './privacy.component.scss'
 })
-export class FooterComponent {
+export class PrivacyComponent {
 
 }

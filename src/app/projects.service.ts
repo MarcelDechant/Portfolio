@@ -16,30 +16,27 @@ export class ProjectsService {
       {
         coverImg: 'Join.png',
         bgImage: 'join2.png',
-        gitRepositories: '',
-        liveTest: '',
+        gitRepositories: 'https://github.com/MarcelDechant/Join',
+        liveTest: 'https://join.marcel-dechant.de/',
         title: 'Join',
-        description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
         usedLanguage: 'HTML | CSS | JavaScript',
         showInfo: false
       },
       {
         coverImg: 'Pollo loco.png',
         bgImage: 'pollo loco2.png',
-        gitRepositories: '',
-        liveTest: '',
+        gitRepositories: 'https://github.com/MarcelDechant/El-Pollo-Loco',
+        liveTest: 'https://el-pollo-loco.marcel-dechant.de/',
         title: 'Ell Pollo Loco',
-        description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
         usedLanguage: 'HTML | CSS | JavaScript',
         showInfo: false
       },
       {
         coverImg: 'Pokedex.png',
         bgImage: 'pokedex2.png',
-        gitRepositories: '',
-        liveTest: '',
+        gitRepositories: 'https://github.com/MarcelDechant/Pokedex',
+        liveTest: 'https://pokedex.marcel-dechant.de/',
         title: 'Pokedex',
-        description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
         usedLanguage: 'JavaScript | HTML | CSS | API',
         showInfo: false
       }

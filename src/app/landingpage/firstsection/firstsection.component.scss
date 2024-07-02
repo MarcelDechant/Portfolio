@@ -73,6 +73,11 @@ h2 {
 
 }
 
+.h2-deutsch {
+    font-size: 54px;
+
+}
+
 h1 {
     font-size: 100px;
     white-space: nowrap;
@@ -100,6 +105,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 40px;
+
     >p {
         font-size: 29px;
     }
@@ -125,7 +131,7 @@ h3 {
         }
     }
 
-    
+
 }
 
 @keyframes rotate {
@@ -170,5 +176,145 @@ h3 {
 
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 90px;
+        height: 97px;
+    }
+
+    h2 {
+        font-size: 60px;
+        width: 60px;
+    }
+
+    .h2-deutsch {
+        font-size: 40px;
+
+    }
+
+    .rightside {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .firstsection {
+
+        .header {
+            margin-left: 28px;
+        }
+
+        .leftImg {
+            left: 355px;
+        }
+
+        .rightImg {
+
+            right: 200px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    h1 {
+        font-size: 70px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 48px;
+        width: 60px;
+    }
+
+    .h2-deutsch {
+        font-size: 32px;
+
+    }
+
+    h3 {
+        font-size: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 770px) {
+    .leftside {
+
+
+        >p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 55px;
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 36px;
+        width: 26px;
+        padding-left: 18px;
+    }
+
+    .h2-deutsch {
+        font-size: 28px;
+
+    }
+
+    h3 {
+        font-size: 32px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 514px) {
+    h1 {
+        font-size: 40px;
+        height: 48px;
+    }
+
+    h2 {
+        font-size: 28px;
+        width: 26px;
+        padding-left: 18px;
+    }
+
+    .h2-deutsch {
+        font-size: 22px;
+
+    }
+
+    h3 {
+        font-size: 24px;
+        height: 22px;
+    }
+}
+@media (max-width: 380px){
+    h1 {
+        font-size: 32px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 21px;
+        width: 18px;
+        padding-left: 11px;
+    }
+
+    .h2-deutsch {
+        font-size: 14px;
+
+    }
+
+    h3 {
+        font-size: 18px;
+        height: 10px;
     }
 }

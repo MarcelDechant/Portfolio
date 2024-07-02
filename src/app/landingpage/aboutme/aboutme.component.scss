@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.vector-background{
+.vector-background {
     position: absolute;
     top: 1598px;
     right: 0;
@@ -16,13 +16,15 @@
     overflow-x: hidden;
 
 }
+
 .Vector {
-    
+
     width: 100%;
 }
 
 .aboutMe {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
 }
@@ -70,7 +72,7 @@
 
     .profil {
         margin-top: 120px;
-        margin-right: 100px;
+
         width: 593px;
         height: 647px;
         position: relative;
@@ -85,4 +87,145 @@
         left: -73px;
         z-index: 1;
     }
+}
+
+@media (max-width: 1270px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .aboutmeText {
+        position: relative;
+        z-index: 4;
+        margin: 0;
+    }
+
+    .aboutmePicture {
+        margin-left: 121px;
+    }
+
+    .vector-background {
+
+        top: 1652px;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .vector-background {
+
+        top: 1696px;
+
+    }
+}
+
+@media (max-width: 766px) {
+    .aboutmePicture {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .aboutmePicture {
+        .shadow {
+
+            height: 600px;
+
+        }
+
+        .profil {
+            width: 542px;
+            height: 610px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutmePicture {
+        .shadow {
+
+            height: 500px;
+
+        }
+
+        .profil {
+            width: 442px;
+            height: 510px;
+        }
+    }
+
+    .vector-background {
+
+        top: 1575px;
+
+    }
+
+    .aboutmeText {
+        width: 347px;
+
+        >h1 {
+            font-weight: 700;
+            font-size: 60px;
+        }
+
+    }
+}
+
+@media (max-width: 482px) {
+    .aboutmePicture {
+        .shadow {
+
+            height: 400px;
+
+        }
+
+        .profil {
+            width: 342px;
+            height: 380px;
+        }
+    }
+
+    .vector-background {
+
+        top: 1482px;
+
+    }
+}
+
+@media (max-width: 370px) {
+    .aboutmePicture {
+        .shadow {
+
+            height: 344px;
+
+        }
+
+        .profil {
+            width: 280px;
+            height: 318px;
+        }
+    }
+
+    .vector-background {
+
+        top: 1424px;
+
+    }
+
+    .aboutmeText {
+        width: 287px;
+
+        >h1 {
+
+            font-size: 50px;
+        }
+
+        >div {
+            >p {
+                font-size: 14px;
+            }
+        }
+    }
+
 }

@@ -1,5 +1,5 @@
 .my-skills-container {
-    padding-top: 50px;
+    padding-top: 117px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,8 @@
 }
 
 .rightside {
-    width:39%;
+    width: 39%;
+
     p {
         width: 80%;
     }
@@ -45,6 +46,7 @@
         font-size: 90px;
     }
 }
+
 .headline {
     display: flex;
     align-items: center;
@@ -81,3 +83,60 @@ button {
 
 }
 
+@media (max-width: 1270px) {
+    .my-skill-section {
+        flex-direction: column-reverse;
+    }
+
+    .rightside {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 42px;
+        >p{
+            width: 45%;
+        }
+    }
+}
+@media (max-width: 670px){
+    .leftside{
+        padding-left: 0;
+    }
+    .rightside {
+        
+        
+        >p{
+            width: 86%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .leftside {
+        gap: 20px;
+    }
+
+    .linedown {
+        gap: 20px;
+    }
+
+    .rightline {
+        width: 200px;
+    }
+
+    .rightside {
+        h1 {
+            font-size: 60px;
+        }
+
+        >p {
+            width: 77%;
+        }
+    }
+}
+@media (max-width: 412px){
+    .rightline {
+        width: 100px;
+    }
+}

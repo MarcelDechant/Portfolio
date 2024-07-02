@@ -1,0 +1,86 @@
+
+
+.privat-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.privatPolicy {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: calc(100% - 32px);
+    margin: 106px 16px 0 16px;
+    max-width: 1440px;
+    text-align: start;
+}
+
+ul{
+    padding-left: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+p {
+    width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 108px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+h3 {
+    color: #00BEE8;
+    width: 100%;
+    word-wrap: break-word;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h4 {
+    color: #00BEE8;
+    width: 100%;
+    word-wrap: break-word;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.contactDataBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.generalText {
+    width: 100%;
+
+    >p {
+        margin-bottom: 20px;
+    }
+}
+
+.structureBox {
+    width: 100%;
+
+    >p {
+        margin: 20px 0;
+    }
+}
+
+.namingBox {
+    margin: 20px 0;
+    width: 100%;
+
+    >a {
+        text-decoration: none;
+        color: #00BEE8;
+    }
+}

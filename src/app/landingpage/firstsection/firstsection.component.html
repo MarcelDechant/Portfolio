@@ -2,7 +2,7 @@
     <img class="leftImg" src="assets/img/shadows/Purple shadow.png" alt="">
     <div>
         <div class="header">
-            <h2>{{ "firstsection.iAm" | translate }}</h2>
+            <h2 [ngClass]="{ 'h2-deutsch': germanIsSelected }">{{ "firstsection.iAm" | translate }}</h2>
 
             <div>
                 <h1>Marcel Dechant</h1>
