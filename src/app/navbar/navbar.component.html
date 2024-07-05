@@ -29,24 +29,24 @@
       &#9776;
     </div>
     <div class="dropdown-menu" [ngClass]="{'show': menuOpen}">
-      <a href="#about-me" >
+      <a href="#about-me"(click)="closeMenu()" >
         {{ "header.aboutMe" | translate }}
       </a>
-      <a href="#mySkills" >
+      <a href="#mySkills" (click)="closeMenu()"  >
         {{ "header.skills" | translate }}
       </a>
-      <a href="#Portfolio" >
+      <a href="#Portfolio" (click)="closeMenu()"  >
         {{ "header.portfolio" | translate }}
       </a>
       <div class="languageButtonBox">
-        <button name="deButton" class="languageButton" [class.selectedLanguage]="languageDeSelected"
-          (click)="changeLanguage('de')">
+        <button name="deButton" class="languageButtonBurger" [class.selectedLanguage]="languageDeSelected"
+          (click)="changeLanguage('de')" (click)="closeMenu()" >
 
           DE
         </button>
         <span style="color: white">|</span>
-        <button name="enButton" class="languageButton" [class.selectedLanguage]="!languageDeSelected"
-          (click)="changeLanguage('en')">
+        <button name="enButton" class="languageButtonBurger" [class.selectedLanguage]="!languageDeSelected"
+          (click)="changeLanguage('en')" (click)="closeMenu()" >
 
           EN
         </button>

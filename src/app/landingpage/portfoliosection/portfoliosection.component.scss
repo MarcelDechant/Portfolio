@@ -78,6 +78,20 @@
     gap: 20px;
     margin-bottom: 10px;
 
+    .git-btn{
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+    }
+
+    .live-btn{
+        background-color: #4b47ff;
+        &:hover {
+            background-color: #00bee8;
+        }
+    }
+
     button {
         width: 152px;
         height: 58px;
@@ -88,6 +102,8 @@
         color: white;
         font-size: 23px;
         cursor: pointer;
+
+        
     }
 
     .project {
@@ -214,7 +230,7 @@
                 >.info-text {
                     height: 300px;
 
-                    >span{
+                    >span {
                         font-size: 18px;
                     }
                 }
@@ -222,13 +238,15 @@
         }
     }
 }
-@media (max-width: 600px){
+
+@media (max-width: 600px) {
     .headline {
         h1 {
-            
+
             font-size: 60px;
         }
     }
+
     .header {
         .leftline {
             flex-grow: 1;
@@ -260,7 +278,7 @@
                 >.info-text {
                     height: 250px;
 
-                    >span{
+                    >span {
                         font-size: 18px;
                     }
                 }
@@ -268,6 +286,7 @@
         }
     }
 }
+
 @media (max-width: 414px) {
 
     .projects {
@@ -275,8 +294,9 @@
         button {
             width: 100px;
             height: 58px;
-          
+
         }
+
         .project {
             height: 300px;
             width: 300px;
@@ -298,14 +318,16 @@
 
                     >b {
                         font-size: 22px;
-                        
+
                     }
-                    >span{
+
+                    >span {
                         font-size: 12px;
                         margin-left: 16px;
                     }
+
                     >p {
-                        
+
                         font-size: 16px;
                     }
                 }

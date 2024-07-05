@@ -100,6 +100,7 @@ input[type=submit]:hover {
 
 input[type=submit]:disabled {
     background-color: #aaa; 
+    cursor: not-allowed;
 }
 .button-form{
     display: flex;

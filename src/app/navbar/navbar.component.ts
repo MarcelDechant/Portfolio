@@ -50,6 +50,9 @@ export class NavbarComponent implements OnInit {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
+  closeMenu(){
+    this.menuOpen = !this.menuOpen;
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
