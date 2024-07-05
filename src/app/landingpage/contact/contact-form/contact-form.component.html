@@ -9,7 +9,7 @@
         </div>
 
         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-            placeholder="{{ 'contact.placeholderEmail' | translate }}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            placeholder="{{ 'contact.placeholderEmail' | translate }}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             autocomplete="off">
 
         <div *ngIf="!email.valid && email.touched && !email.disabled">
@@ -36,4 +36,7 @@
         </div>
 
     </form>
+    <div *ngIf="emailSent"  class="email-popup">
+        {{ "contact.successMessage" | translate }}
+      </div>
 </div>

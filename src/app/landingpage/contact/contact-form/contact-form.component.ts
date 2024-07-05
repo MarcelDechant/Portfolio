@@ -8,7 +8,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule,RouterModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
@@ -17,8 +17,8 @@ export class ContactFormComponent {
   germanIsSelected: boolean = false;
 
 
-  constructor(private translateService: TranslateService) {}
-  http = inject(HttpClient)
+  constructor(private translateService: TranslateService) { }
+  http = inject(HttpClient);
 
   contactData = {
     name: "",
@@ -26,11 +26,10 @@ export class ContactFormComponent {
     message: "",
     terms: false
   };
-
-  mailTest = true;
+  emailSent = false;
 
   post = {
-    endPoint: 'https://marcel-dechant/sendMail.php',
+    endPoint: 'https://marcel-dechant.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,7 +40,7 @@ export class ContactFormComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -50,12 +49,20 @@ export class ContactFormComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            this.showEmailSentMessage();
+          },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
 
       ngForm.resetForm();
     }
+  }
+  showEmailSentMessage() {
+    this.emailSent = true;
+    setTimeout(() => {
+      this.emailSent = false;
+    }, 2000);
   }
 
 

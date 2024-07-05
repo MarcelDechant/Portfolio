@@ -105,3 +105,52 @@ input[type=submit]:disabled {
     display: flex;
     justify-content: center;
 }
+.email-popup {
+    position: relative;
+    right: -150px; 
+    top: -295px;
+    background-color: #141D2F;
+    border: 2px solid #00BEE8;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    width: 44%;
+    border-radius: 25px;
+  }
+  
+  @media (max-width: 1270px){
+    .email-popup{
+        right: -108px; 
+    }
+  }
+  @media (max-width: 1204px){
+    .email-popup{
+        width: 48%;
+    }
+  }
+  @media (max-width: 1105px){
+    .email-popup{
+        right: -80px;
+        width: 59%;
+    }
+  }
+  @media (max-width: 900px){
+    .email-popup{
+        right: -7px;
+        width: 84%;
+    }
+  }
+  @media (max-width: 450px){
+    .email-popup{
+        right: 0px;
+        width: 84%;
+        top: -321px;
+    }
+  }
+  @media (max-width: 393px){
+    .email-popup{
+        font-size: 14px;
+    }
+  }
