@@ -12,9 +12,9 @@
   },
   "aboutMe": {
     "headline": "Über mich",
-    "introText": "Hallo, ich bin ein Front-End-Entwickler aus Amberg, Deutschland. Ich freue mich, dass Sie meine Seite besucht haben, um sich über meine Fähigkeiten zu informieren und zu sehen, wie ich Ihr Unternehmen mit Ihnen voranbringen kann.",
-    "firstText": "Das Programmieren liegt mir besonders am Herzen, weil es mir ermöglicht, Ideen in die Realität umzusetzen. Die Möglichkeit, etwas aus dem Nichts zu erschaffen, komplexe Probleme zu lösen und ständig neue Technologien zu erlernen, ist unglaublich bereichernd.",
-    "secondText": "Der Grundstein für meinen Weg zum Programmieren war die Beherrschung der Problemlösung. Zu verstehen, wie man komplexe Probleme in überschaubare Teile zerlegt und logisches Denken anwendet, um effektive Lösungen zu entwickeln, hat meine Herangehensweise an das Programmieren verändert."
+    "introText": "Ich bin ein Front-End-Entwickler aus Amberg, Bayern. Schön, dass Sie meine Seite besuchen, um mehr über meine Fähigkeiten zu erfahren und zu sehen, wie ich Ihr Unternehmen mit meiner Expertise voranbringen kann. Ich freue mich darauf, gemeinsam mit Ihnen innovative und maßgeschneiderte Lösungen zu entwickeln.",
+    "firstText": "Ich liebe es, kreative und effektive Lösungen für die Gestaltung digitaler Erlebnisse zu finden. Die Vielfalt und Dynamik der Programmierung inspiriert mich jeden Tag aufs Neue.",
+    "secondText": "Für mich vergeht die Zeit wie im Flug, wenn ich code, und jedes gelöste Problem fühlt sich an, als würde ein Puzzleteil seinen richtigen Platz finden. Die Befriedigung ist am größten, wenn das Problem besonders knifflig war."
   },
   "mySkills": {
     "headline": "Skills",

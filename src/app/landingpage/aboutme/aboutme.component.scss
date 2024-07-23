@@ -9,7 +9,7 @@
 
 .vector-background {
     position: absolute;
-    top: 1598px;
+    top: 1490px;
     right: 0;
     width: 100vw;
     height: auto;
@@ -72,9 +72,8 @@
     position: relative;
 
     .profil {
-        margin-top: 120px;
-
-        width: 593px;
+        margin-top: 92px;
+        width: 457px;
         height: 647px;
         position: relative;
         z-index: 2;
@@ -85,7 +84,7 @@
         height: 647px;
         position: absolute;
         top: 180px;
-        left: -73px;
+        left: -131px;
         z-index: 1;
     }
 }
@@ -108,7 +107,7 @@
 
     .vector-background {
 
-        top: 1652px;
+        top: 1512px;
 
     }
 }
@@ -116,7 +115,7 @@
 @media (max-width: 900px) {
     .vector-background {
 
-        top: 1696px;
+        top: 1550px;
 
     }
 }
@@ -136,29 +135,18 @@
         }
 
         .profil {
-            width: 542px;
+
             height: 610px;
         }
     }
 }
 
 @media (max-width: 600px) {
-    .aboutmePicture {
-        .shadow {
 
-            height: 500px;
-
-        }
-
-        .profil {
-            width: 442px;
-            height: 510px;
-        }
-    }
 
     .vector-background {
 
-        top: 1575px;
+        top: 1480px;
 
     }
 
@@ -177,19 +165,20 @@
     .aboutmePicture {
         .shadow {
 
-            height: 400px;
-
+            height: 431px;
+            left: -57px;
+            top: 152px;
         }
 
         .profil {
             width: 342px;
-            height: 380px;
+            height: 459px;
         }
     }
 
     .vector-background {
 
-        top: 1482px;
+        top: 1363px;
 
     }
 }
@@ -204,13 +193,13 @@
 
         .profil {
             width: 280px;
-            height: 318px;
+            height: 364px;
         }
     }
 
     .vector-background {
 
-        top: 1424px;
+        top: 1315px;
 
     }
 
